@@ -21,6 +21,4 @@ public interface CandidateMapper {
     CandidateDTO map(Candidate candidate);
 
     List<CandidateDTO> map(List<Candidate> candidates);
-
-
 }

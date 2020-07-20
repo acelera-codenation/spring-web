@@ -17,5 +17,4 @@ public class SubmissionDTO {
     private String userId;
     private BigDecimal score;
     private String createdAt;
-
 }

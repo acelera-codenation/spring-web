@@ -13,7 +13,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class AccelerationService implements AccelerationServiceInterface {
 
-    private AccelerationRepository accelerationRepository;
+    private final AccelerationRepository accelerationRepository;
 
     @Override
     public Optional<Acceleration> findById(Long id) {

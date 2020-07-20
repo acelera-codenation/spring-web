@@ -13,7 +13,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class UserService implements UserServiceInterface {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Override
     public Optional<User> findById(Long userId) {

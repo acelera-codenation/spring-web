@@ -20,5 +20,4 @@ public interface SubmissionMapper {
     SubmissionDTO map(Submission submission);
 
     List<SubmissionDTO> map(List<Submission> submissions);
-
 }

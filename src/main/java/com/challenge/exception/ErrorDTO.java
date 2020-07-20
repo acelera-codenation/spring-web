@@ -1,19 +1,20 @@
-package com.challenge.dto;
+package com.challenge.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CandidateDTO {
+public class ErrorDTO implements Serializable {
 
-    private Long userId;
-    private Long accelerationId;
-    private Long companyId;
     private Integer status;
-    private String createdAt;
+    private Long timeStamp;
+    private String msg;
+
 }

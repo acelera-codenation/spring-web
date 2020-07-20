@@ -13,7 +13,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class CompanyService implements CompanyServiceInterface {
 
-    private CompanyRepository companyRepository;
+    private final CompanyRepository companyRepository;
 
     @Override
     public Optional<Company> findById(Long id) {

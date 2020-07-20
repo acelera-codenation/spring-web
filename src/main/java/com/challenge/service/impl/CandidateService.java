@@ -13,7 +13,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class CandidateService implements CandidateServiceInterface {
 
-    private CandidateRepository candidateRepository;
+    private final CandidateRepository candidateRepository;
 
     @Override
     public Optional<Candidate> findById(Long userId, Long companyId, Long accelerationId) {

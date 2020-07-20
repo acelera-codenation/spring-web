@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ChallengeService implements ChallengeServiceInterface {
 
-    private ChallengeRepository repository;
+    private final ChallengeRepository repository;
 
     @Override
     public List<Challenge> findByAccelerationIdAndUserId(Long accelerationId, Long userId) {
